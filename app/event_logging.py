@@ -2,9 +2,9 @@ import uuid
 import datetime
 from typing import List, Union, Dict
 
-from plugins.adversary.app.engine.database import EncryptedDictField
-from plugins.adversary.app.engine.objects import Log
-from plugins.adversary.app.util import tz_utcnow
+from adversary.app.engine.database import EncryptedDictField
+from adversary.app.engine.objects import Log
+from adversary.app.util import tz_utcnow
 
 version = 1.1
 

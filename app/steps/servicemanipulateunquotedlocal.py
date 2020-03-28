@@ -1,9 +1,9 @@
 import logging
 import asyncio
 
-from plugins.adversary.app.commands import cmd, sc
-from plugins.adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPService
-from plugins.adversary.app.commands.errors import *
+from adversary.app.commands import cmd, sc
+from adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPService
+from adversary.app.commands.errors import *
 
 log = logging.getLogger(__name__)
 

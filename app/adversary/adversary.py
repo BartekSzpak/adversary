@@ -3,7 +3,7 @@
 
 import random
 from collections import defaultdict
-from plugins.adversary.app.engine.objects import Adversary
+from adversary.app.engine.objects import Adversary
 
 
 class AdversaryProfile(object):

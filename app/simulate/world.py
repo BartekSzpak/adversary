@@ -4,7 +4,7 @@ import string
 from collections import defaultdict
 from typing import List, Iterable
 import copy
-from plugins.adversary.app.simulate import wordlist
+from adversary.app.simulate import wordlist
 
 
 class DerefError(Exception):

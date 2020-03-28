@@ -1,6 +1,6 @@
 import copy
 from clips import Environment
-from plugins.adversary.app.logic.logic import Variable, Comparison, Term, Expression, LogicContext, Rule, Unary
+from adversary.app.logic.logic import Variable, Comparison, Term, Expression, LogicContext, Rule, Unary
 
 
 def expr_terms(expr: Expression):

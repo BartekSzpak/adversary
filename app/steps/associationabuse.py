@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import static
-from plugins.adversary.app.operation.operation import Step, OPRat, OPPersistence, OPVar, OPFile
+from adversary.app.commands import static
+from adversary.app.operation.operation import Step, OPRat, OPPersistence, OPVar, OPFile
 import random
 
 

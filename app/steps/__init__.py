@@ -2,8 +2,8 @@ from pathlib import Path
 import os
 import importlib.util
 import inspect
-from plugins.adversary.app.operation.step import Step
-from plugins.adversary.app.util import relative_path
+from adversary.app.operation.step import Step
+from adversary.app.util import relative_path
 
 
 step_dir = Path(relative_path(__file__, os.path.join('..', 'steps')))

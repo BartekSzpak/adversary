@@ -1,8 +1,8 @@
 import logging
 
-from plugins.adversary.app.commands import reg
-from plugins.adversary.app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
-from plugins.adversary.app.commands.errors import *
+from adversary.app.commands import reg
+from adversary.app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
+from adversary.app.commands.errors import *
 
 log = logging.getLogger(__name__)
 

@@ -1,4 +1,4 @@
-from plugins.adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar
+from adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar
 
 
 class ExfilAdversaryProfile(Step):

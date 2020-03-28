@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import reg
-from plugins.adversary.app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar
+from adversary.app.commands import reg
+from adversary.app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar
 
 
 class GetLocalProfiles(Step):

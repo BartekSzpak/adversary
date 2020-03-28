@@ -1,12 +1,12 @@
 import logging
-from plugins.adversary.app.engine.objects import ObservedHost, Operation, ObservedRat, ObservedFile, ObservedRegKey, ObservedShare, \
+from adversary.app.engine.objects import ObservedHost, Operation, ObservedRat, ObservedFile, ObservedRegKey, ObservedShare, \
     ObservedSchtask, ObservedService, Host, JobException, Trashed, Rat
-from plugins.adversary.app.commands import taskkill, cmd, net, sc, schtasks, reg, footprint, static
-from plugins.adversary.app.commands.powershell import PSArg, PSFunction, escape_string_literally
-from plugins.adversary.app.commands.errors import *
-from plugins.adversary.app.operation.operation import InterfaceWrapper
-from plugins.adversary.app.util import CaseException
-from plugins.adversary.app.commands.command import CommandLine
+from adversary.app.commands import taskkill, cmd, net, sc, schtasks, reg, footprint, static
+from adversary.app.commands.powershell import PSArg, PSFunction, escape_string_literally
+from adversary.app.commands.errors import *
+from adversary.app.operation.operation import InterfaceWrapper
+from adversary.app.util import CaseException
+from adversary.app.commands.command import CommandLine
 from typing import Callable, Union
 
 log = logging.getLogger(__name__)

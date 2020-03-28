@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import wmic
-from plugins.adversary.app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
+from adversary.app.commands import wmic
+from adversary.app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
 
 
 class WMIRemoteProcessCreate(Step):

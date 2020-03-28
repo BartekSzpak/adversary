@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import Iterable, Set, List, Union
-from plugins.adversary.app.logic.logic import Term, Action, Variable
-from plugins.adversary.app.util import CaseException
+from adversary.app.logic.logic import Term, Action, Variable
+from adversary.app.util import CaseException
 from unification import unify, var, unifiable
 import itertools
 

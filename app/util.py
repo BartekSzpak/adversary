@@ -5,7 +5,7 @@ from typing import Dict, List
 
 import requests
 
-import plugins.adversary.app.config as config
+import adversary.app.config as config
 
 
 class CaseException(Exception):

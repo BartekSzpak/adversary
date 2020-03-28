@@ -1,9 +1,9 @@
 from datetime import timedelta
 
-from plugins.adversary.app.commands import schtasks
+from adversary.app.commands import schtasks
 from ..operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar, OPSchtask, \
     OPTimeDelta
-from plugins.adversary.app.util import tz_utcnow
+from adversary.app.util import tz_utcnow
 
 
 class Schtasks(Step):

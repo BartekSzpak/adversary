@@ -1,6 +1,6 @@
-import plugins.adversary.app.config as config
-from plugins.adversary.app.commands import psexec
-from plugins.adversary.app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
+import adversary.app.config as config
+from adversary.app.commands import psexec
+from adversary.app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
 
 
 class PsexecMove(Step):

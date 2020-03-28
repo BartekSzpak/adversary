@@ -1,6 +1,6 @@
-from plugins.adversary.app.commands import parsers
-from plugins.adversary.app.commands.powershell import PSArg, PSFunction
-from plugins.adversary.app.operation.operation import Step, OPUser, OPDomain, OPHost, OPRat, OPVar
+from adversary.app.commands import parsers
+from adversary.app.commands.powershell import PSArg, PSFunction
+from adversary.app.operation.operation import Step, OPUser, OPDomain, OPHost, OPRat, OPVar
 
 
 class GetAdmin(Step):

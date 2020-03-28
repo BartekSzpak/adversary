@@ -1,10 +1,10 @@
 import inspect
 from collections import defaultdict, OrderedDict
-from plugins.adversary.app.cddl.build_ast import get_ast
-from plugins.adversary.app.cddl.ast import StatementNode, ExprNode, DefineNode, IfNode, IfElNode, ForNode, CreateNode, KnowNode, \
+from adversary.app.cddl.build_ast import get_ast
+from adversary.app.cddl.ast import StatementNode, ExprNode, DefineNode, IfNode, IfElNode, ForNode, CreateNode, KnowNode, \
     ForgetNode, PassNode, ParenNode, NotNode, ExistNode, CompNode, BinCompNode, ObjNode
-from plugins.adversary.app.util import CaseException
-from plugins.adversary.app.simulate.world import World, MetaWorld
+from adversary.app.util import CaseException
+from adversary.app.simulate.world import World, MetaWorld
 
 
 class Simulator(object):

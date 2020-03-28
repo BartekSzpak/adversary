@@ -1,5 +1,5 @@
 import json
-import plugins.adversary.app.config as config
+import adversary.app.config as config
 
 """
 This module provides simulation functionality 

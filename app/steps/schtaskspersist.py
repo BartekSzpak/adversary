@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import schtasks
-from plugins.adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPSchtask, OPPersistence
+from adversary.app.commands import schtasks
+from adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPSchtask, OPPersistence
 
 
 class SchtasksPersist(Step):

@@ -1,5 +1,5 @@
 from pyDatalog import pyDatalog, pyParser
-from plugins.adversary.app.logic.logic import Variable, Comparison, Term, Expression, LogicContext, Rule, Unary, remove_or_comparisons
+from adversary.app.logic.logic import Variable, Comparison, Term, Expression, LogicContext, Rule, Unary, remove_or_comparisons
 import collections
 
 

@@ -2,7 +2,7 @@ import json
 import string
 
 import requests
-from plugins.adversary.app.engine.objects import AttackTactic, AttackTechnique, AttackList, AttackGroup
+from adversary.app.engine.objects import AttackTactic, AttackTechnique, AttackList, AttackGroup
 
 
 def get_techniques_from_group(links, techs, group_id):

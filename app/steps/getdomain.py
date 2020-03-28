@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import nbtstat
-from plugins.adversary.app.operation.operation import Step, OPDomain, OPRat
+from adversary.app.commands import nbtstat
+from adversary.app.operation.operation import Step, OPDomain, OPRat
 
 
 class GetDomain(Step):

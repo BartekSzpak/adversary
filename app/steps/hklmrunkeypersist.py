@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import reg
-from plugins.adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
+from adversary.app.commands import reg
+from adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
 
 
 class HKLMRunKeyPersist(Step):

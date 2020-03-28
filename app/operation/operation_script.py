@@ -1,4 +1,4 @@
-from plugins.adversary.app.operation import operation as operation_intf
+from adversary.app.operation import operation as operation_intf
 from collections import defaultdict
 
 

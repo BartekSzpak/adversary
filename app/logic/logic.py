@@ -6,9 +6,9 @@ from itertools import product
 
 from unification import unifiable
 
-from plugins.adversary.app.operation.step import OPVar, Step
-from plugins.adversary.app.engine import objects as db
-from plugins.adversary.app.util import CaseException
+from adversary.app.operation.step import OPVar, Step
+from adversary.app.engine import objects as db
+from adversary.app.util import CaseException
 
 
 # convert steps to logic predicates

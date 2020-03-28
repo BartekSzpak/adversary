@@ -1,6 +1,6 @@
-import plugins.adversary.app.config as config
-from plugins.adversary.app.commands import static
-from plugins.adversary.app.operation.operation import Step, OPRat, OPFile, OPPersistence
+import adversary.app.config as config
+from adversary.app.commands import static
+from adversary.app.operation.operation import Step, OPRat, OPFile, OPPersistence
 
 
 class LogonPersistence(Step):

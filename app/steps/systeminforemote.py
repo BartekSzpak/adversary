@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import systeminfo
-from plugins.adversary.app.operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPOSVersion
+from adversary.app.commands import systeminfo
+from adversary.app.operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPOSVersion
 
 
 class SysteminfoRemote(Step):

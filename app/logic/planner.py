@@ -6,8 +6,8 @@ import logging
 from enum import Enum
 from collections import defaultdict
 
-from plugins.adversary.app.logic.logic import Variable, Comparison, Term, LogicContext, convert_to_action, Action, Unary
-from plugins.adversary.app.util import CaseException
+from adversary.app.logic.logic import Variable, Comparison, Term, LogicContext, convert_to_action, Action, Unary
+from adversary.app.util import CaseException
 
 log = logging.getLogger(__name__)
 

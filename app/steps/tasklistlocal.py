@@ -1,5 +1,5 @@
-from plugins.adversary.app.commands import tasklist
-from plugins.adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPProcess
+from adversary.app.commands import tasklist
+from adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPProcess
 
 
 class TasklistLocal(Step):
