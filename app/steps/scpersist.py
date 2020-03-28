@@ -1,5 +1,5 @@
-from adversary.app.commands import sc
-from adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPPersistence, OPService
+from ..commands import sc
+from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPPersistence, OPService
 
 
 class ScPersist(Step):

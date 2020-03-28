@@ -1,5 +1,5 @@
-from adversary.app.commands import schtasks
-from adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPSchtask, OPPersistence
+from ..commands import schtasks
+from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPSchtask, OPPersistence
 
 
 class SchtasksPersist(Step):

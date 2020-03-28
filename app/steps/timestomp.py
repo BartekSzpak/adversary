@@ -1,6 +1,6 @@
-from adversary.app.commands.powershell import PSArg, PSFunction
-from adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar
-from adversary.app.commands import parsers
+from ..commands import parsers
+from ..commands.powershell import PSArg, PSFunction
+from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar
 
 
 class Timestomp(Step):

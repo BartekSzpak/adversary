@@ -1,13 +1,15 @@
 import logging
-from adversary.app.engine.objects import ObservedHost, Operation, ObservedRat, ObservedFile, ObservedRegKey, ObservedShare, \
-    ObservedSchtask, ObservedService, Host, JobException, Trashed, Rat
-from adversary.app.commands import taskkill, cmd, net, sc, schtasks, reg, footprint, static
-from adversary.app.commands.powershell import PSArg, PSFunction, escape_string_literally
-from adversary.app.commands.errors import *
-from adversary.app.operation.operation import InterfaceWrapper
-from adversary.app.util import CaseException
-from adversary.app.commands.command import CommandLine
 from typing import Callable, Union
+
+from ..commands import taskkill, cmd, net, sc, schtasks, reg, footprint, static
+from ..commands.command import CommandLine
+from ..commands.errors import *
+from ..commands.powershell import PSArg, PSFunction, escape_string_literally
+from ..engine.objects import ObservedHost, Operation, ObservedRat, ObservedFile, ObservedRegKey, \
+    ObservedShare, \
+    ObservedSchtask, ObservedService, Host, JobException, Trashed, Rat
+from ..operation.operation import InterfaceWrapper
+from ..util import CaseException
 
 log = logging.getLogger(__name__)
 

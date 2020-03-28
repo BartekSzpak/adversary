@@ -1,5 +1,5 @@
-from adversary.app.commands import net
-from adversary.app.operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPShare
+from ..commands import net
+from ..operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPShare
 
 
 class NetUse(Step):

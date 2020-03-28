@@ -1,6 +1,6 @@
-import adversary.app.config as config
-from adversary.app.commands import static
-from adversary.app.operation.operation import Step, OPRat, OPFile, OPPersistence, OPVar, OPHost
+import ..config as config
+from ..commands import static
+from ..operation.operation import Step, OPRat, OPFile, OPPersistence, OPVar, OPHost
 
 
 class Modify_Shortcut(Step):

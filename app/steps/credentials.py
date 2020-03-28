@@ -1,7 +1,7 @@
-from adversary.app.commands.powershell import PSArg, PSFunction
-from adversary.app.commands.mimikatz import MimikatzCommand, sekurlsa_logonpasswords, mimi_exit, privilege_debug
-from adversary.app.operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar
-from adversary.app.commands import parsers
+from ..commands import parsers
+from ..commands.mimikatz import MimikatzCommand, sekurlsa_logonpasswords, mimi_exit, privilege_debug
+from ..commands.powershell import PSArg, PSFunction
+from ..operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar
 
 
 class Credentials(Step):

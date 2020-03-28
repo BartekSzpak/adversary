@@ -1,5 +1,5 @@
-from adversary.app.commands import winrm
-from adversary.app.operation.operation import Step, OPRat, OPFile, OPHost, OPVar, OPCredential, OPUser, OPDomain
+from ..commands import winrm
+from ..operation.operation import Step, OPRat, OPFile, OPHost, OPVar, OPCredential, OPUser, OPDomain
 
 
 class WinRM(Step):

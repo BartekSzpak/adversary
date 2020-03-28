@@ -1,5 +1,5 @@
-from adversary.app.commands import systeminfo
-from adversary.app.operation.operation import Step, OPDomain, OPHost, OPRat, OPVar, OPOSVersion
+from ..commands import systeminfo
+from ..operation.operation import Step, OPDomain, OPHost, OPRat, OPVar, OPOSVersion
 
 
 class SysteminfoLocal(Step):

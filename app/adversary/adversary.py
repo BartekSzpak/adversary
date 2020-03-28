@@ -3,7 +3,8 @@
 
 import random
 from collections import defaultdict
-from adversary.app.engine.objects import Adversary
+
+from ..engine.objects import Adversary
 
 
 class AdversaryProfile(object):

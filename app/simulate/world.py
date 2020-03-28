@@ -1,10 +1,11 @@
+import copy
 import math
 import random
 import string
 from collections import defaultdict
 from typing import List, Iterable
-import copy
-from adversary.app.simulate import wordlist
+
+from ..simulate import wordlist
 
 
 class DerefError(Exception):

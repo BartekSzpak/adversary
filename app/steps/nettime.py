@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from adversary.app.commands import net
-from adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPTimeDelta
+from ..commands import net
+from ..operation.operation import Step, OPHost, OPRat, OPVar, OPTimeDelta
 
 
 class NetTime(Step):

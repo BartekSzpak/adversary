@@ -1,5 +1,5 @@
-from adversary.app.commands import tasklist
-from adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPProcess
+from ..commands import tasklist
+from ..operation.operation import Step, OPHost, OPRat, OPVar, OPProcess
 
 
 class TasklistLocal(Step):

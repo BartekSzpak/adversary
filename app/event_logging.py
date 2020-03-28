@@ -1,10 +1,10 @@
-import uuid
 import datetime
+import uuid
 from typing import List, Union, Dict
 
-from adversary.app.engine.database import EncryptedDictField
-from adversary.app.engine.objects import Log
-from adversary.app.util import tz_utcnow
+from ..engine.database import EncryptedDictField
+from ..engine.objects import Log
+from ..util import tz_utcnow
 
 version = 1.1
 

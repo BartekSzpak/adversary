@@ -1,6 +1,6 @@
-from adversary.app.commands.powershell import PSFunction
-from adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPService
-from adversary.app.commands import parsers
+from ..commands import parsers
+from ..commands.powershell import PSFunction
+from ..operation.operation import Step, OPHost, OPRat, OPVar, OPService
 
 
 class GetPrivEscSvcInfo(Step):

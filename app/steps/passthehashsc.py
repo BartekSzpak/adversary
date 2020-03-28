@@ -1,8 +1,9 @@
-from adversary.app.commands import sc
-from adversary.app.commands.powershell import PSArg, PSFunction
-from adversary.app.commands.mimikatz import MimikatzCommand, sekurlsa_pth, mimi_exit, privilege_debug
-from adversary.app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar, OPService
-from adversary.app.commands import parsers
+from ..commands import parsers
+from ..commands import sc
+from ..commands.mimikatz import MimikatzCommand, sekurlsa_pth, mimi_exit, privilege_debug
+from ..commands.powershell import PSArg, PSFunction
+from ..operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar, \
+    OPService
 
 
 class PassTheHashSc(Step):

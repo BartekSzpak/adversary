@@ -3,9 +3,8 @@ import os
 from datetime import datetime, timezone
 from typing import Dict, List
 
+import ..config as config
 import requests
-
-import adversary.app.config as config
 
 
 class CaseException(Exception):

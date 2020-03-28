@@ -1,13 +1,13 @@
-import typing
-from typing import List, Tuple, Union, Set, Dict
-import time
 import functools
 import logging
-from enum import Enum
+import time
+import typing
 from collections import defaultdict
+from enum import Enum
+from typing import List, Tuple, Union, Set, Dict
 
-from adversary.app.logic.logic import Variable, Comparison, Term, LogicContext, convert_to_action, Action, Unary
-from adversary.app.util import CaseException
+from ..logic.logic import Variable, Comparison, Term, LogicContext, convert_to_action, Action, Unary
+from ..util import CaseException
 
 log = logging.getLogger(__name__)
 

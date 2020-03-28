@@ -1,10 +1,10 @@
-import logging
 import asyncio
+import logging
 
-from adversary.app.commands import cmd, sc, command
-from adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPService
-from adversary.app.commands.errors import *
-from adversary.app.commands import parsers
+from ..commands import cmd, sc, command
+from ..commands import parsers
+from ..commands.errors import *
+from ..operation.operation import Step, OPHost, OPRat, OPVar, OPService
 
 log = logging.getLogger(__name__)
 

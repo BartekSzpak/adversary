@@ -1,8 +1,7 @@
 import logging
 
-from adversary.app.commands import netstat
-from adversary.app.operation.operation import Step, OPRat
-
+from ..commands import netstat
+from ..operation.operation import Step, OPRat
 
 log = logging.getLogger(__name__)
 

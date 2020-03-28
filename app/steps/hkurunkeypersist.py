@@ -1,8 +1,8 @@
 import logging
 
-from adversary.app.commands import reg
-from adversary.app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
-from adversary.app.commands.errors import *
+from ..commands import reg
+from ..commands.errors import *
+from ..operation.operation import Step, OPUser, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
 
 log = logging.getLogger(__name__)
 

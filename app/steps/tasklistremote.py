@@ -1,5 +1,5 @@
-from adversary.app.commands import tasklist
-from adversary.app.operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPProcess
+from ..commands import tasklist
+from ..operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPProcess
 
 
 class TasklistRemote(Step):

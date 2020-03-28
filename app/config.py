@@ -1,9 +1,9 @@
 import base64
 import configparser
-import pathlib
 import os
+import pathlib
 
-from adversary.app.database.dao import Dao
+from ..database.dao import Dao
 
 
 class AdversaryPluginSettings:

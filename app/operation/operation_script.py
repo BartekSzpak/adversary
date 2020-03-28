@@ -1,5 +1,6 @@
-from adversary.app.operation import operation as operation_intf
 from collections import defaultdict
+
+from ..operation import operation as operation_intf
 
 
 class Planner(object):

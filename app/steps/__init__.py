@@ -1,10 +1,10 @@
-from pathlib import Path
-import os
 import importlib.util
 import inspect
-from adversary.app.operation.step import Step
-from adversary.app.util import relative_path
+import os
+from pathlib import Path
 
+from ..operation.step import Step
+from ..util import relative_path
 
 step_dir = Path(relative_path(__file__, os.path.join('..', 'steps')))
 all_steps = []

@@ -1,5 +1,5 @@
-from adversary.app.commands import reg
-from adversary.app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar
+from ..commands import reg
+from ..operation.operation import Step, OPUser, OPHost, OPRat, OPVar
 
 
 class GetLocalProfiles(Step):

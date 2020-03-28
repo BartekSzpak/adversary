@@ -1,5 +1,5 @@
-from adversary.app.commands import cmd
-from adversary.app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar
+from ..commands import cmd
+from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar
 
 
 class DirListCollection(Step):

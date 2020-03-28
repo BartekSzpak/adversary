@@ -1,14 +1,13 @@
 import re
 import time
-from typing import List, Iterable, Set, Tuple, Union
 from collections import defaultdict
 from itertools import product
+from typing import List, Iterable, Set, Tuple, Union
 
+from ..engine import objects as db
+from ..operation.step import OPVar, Step
+from ..util import CaseException
 from unification import unifiable
-
-from adversary.app.operation.step import OPVar, Step
-from adversary.app.engine import objects as db
-from adversary.app.util import CaseException
 
 
 # convert steps to logic predicates

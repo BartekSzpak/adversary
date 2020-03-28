@@ -1,6 +1,7 @@
-from adversary.app.commands import static
-from adversary.app.operation.operation import Step, OPRat, OPPersistence, OPVar, OPFile
 import random
+
+from ..commands import static
+from ..operation.operation import Step, OPRat, OPPersistence, OPVar, OPFile
 
 
 class AssociationAbuse(Step):

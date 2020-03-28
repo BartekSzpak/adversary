@@ -2,13 +2,13 @@ import functools
 import logging
 from typing import List, Callable
 
-from adversary.app import interface as interface_module
-from adversary.app import event_logging
-from adversary.app.engine.objects import Operation, ObservedRat, ActiveConnection
-from adversary.app.commands.command import CommandLine
-from adversary.app.commands.powershell import PSFunction
-from adversary.app.operation.operation_errors import MissingFileError
-from adversary.app.simulate import sim
+from . import event_logging
+from . import interface as interface_module
+from ..commands.command import CommandLine
+from ..commands.powershell import PSFunction
+from ..engine.objects import Operation, ObservedRat
+from ..operation.operation_errors import MissingFileError
+from ..simulate import sim
 
 log = logging.getLogger(__name__)
 

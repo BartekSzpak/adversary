@@ -1,6 +1,6 @@
-from adversary.app.commands import parsers
-from adversary.app.commands import cmd
-from adversary.app.operation.operation import Step, OPDevice, OPHost, OPRat, OPVar
+from ..commands import cmd
+from ..commands import parsers
+from ..operation.operation import Step, OPDevice, OPHost, OPRat, OPVar
 
 
 class GetPeripheralDevicesLocal(Step):

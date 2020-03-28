@@ -1,9 +1,10 @@
+import itertools
 from collections import defaultdict
 from typing import Iterable, Set, List, Union
-from adversary.app.logic.logic import Term, Action, Variable
-from adversary.app.util import CaseException
+
+from ..logic.logic import Term, Action, Variable
+from ..util import CaseException
 from unification import unify, var, unifiable
-import itertools
 
 
 def make_unifiable(obj: object, var_func=var) -> object:

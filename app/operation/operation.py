@@ -1,51 +1,49 @@
 import asyncio
-import logging
-import inspect
 import functools
+import http.server
+import inspect
+import logging
+import os
+import random
+import socketserver
 import ssl
 import threading
 import time
-import random
+import traceback
 from collections import defaultdict
 from typing import List, Type, Callable, Union, Dict, Optional
-import traceback
-import http.server
-import socketserver
+
 import mongoengine
-import os
-
-from mongoengine import ListField, ReferenceField
-from bson.objectid import ObjectId
-from adversary.app.utility.simulation import get_simulated_domain_data
-
-from adversary.app.operation.operation_obj import InterfaceWrapper, OperationWrapper
-from adversary.app.operation.operation_script import ScriptContext
-from adversary.app.engine.objects import Rat, ObservedUser, ObservedDomain, ObservedFile, ObservedCredential, \
+from . import event_logging
+from . import util
+from ..adversary import adversary
+from ..commands import errors
+from ..commands import parsers
+from ..engine.objects import Rat, ObservedUser, ObservedDomain, ObservedFile, ObservedCredential, \
     ObservedHost, ObservedShare, ObservedSchtask, ObservedTimeDelta, ObservedRat, Operation, ExtrovirtsDocument, \
     CodedStep, ObservedPersistence, ObservedService, ObservedRegKey, Host, AttackTechnique, ObservedProcess, \
     ObservedDevice, JobException, Trashed, ErrorLog, ObservedOSVersion, Setting
-
-from adversary.app import event_logging
-from adversary.app.logic import planner, logic
-from adversary.app.operation.step import OPCredential, OPDomain, OPRat, OPFile, OPHost, OPSchtask, OPShare, OPTimeDelta, OPUser, \
+from ..logic import planner, logic
+from ..operation.cleanup import Cleaner
+from ..operation.operation_errors import StepParseError, RatDisconnectedError, InvalidTimeoutExceptionError, \
+    RatCallbackTimeoutError
+from ..operation.operation_obj import InterfaceWrapper, OperationWrapper
+from ..operation.operation_script import ScriptContext
+from ..operation.step import OPCredential, OPDomain, OPRat, OPFile, OPHost, OPSchtask, OPShare, OPTimeDelta, \
+    OPUser, \
     OPVar, \
     Step, Keyword, OPPersistence, OPService, OPRegKey, OPProcess, OPTrashed, OPOSVersion, OPDevice
-from adversary.app import util
-from adversary.app.commands import parsers
-from adversary.app.commands import errors
-from adversary.app.util import CaseException
-from adversary.app.adversary import adversary
-from adversary.app.operation.operation_errors import StepParseError, RatDisconnectedError, InvalidTimeoutExceptionError, \
-    RatCallbackTimeoutError
-from adversary.app.operation.cleanup import Cleaner
-from adversary.app.steps import all_steps
-
+from ..steps import all_steps
+from ..util import CaseException
+from ..utility.simulation import get_simulated_domain_data
+from bson.objectid import ObjectId
+from mongoengine import ListField, ReferenceField
 
 try:
     from submodules.clips.app.logic.clips_logic import CLIPSContext as LogicContext
 except ImportError:
     logging.warning("Couldn't find clips module. Falling back to slower pyDatalog")
-    from adversary.app.logic.pydatalog_logic import DatalogContext as LogicContext
+    from ..logic.pydatalog_logic import DatalogContext as LogicContext
 
 _database_objs = {OPUser: ObservedUser,
                   OPHost: ObservedHost,

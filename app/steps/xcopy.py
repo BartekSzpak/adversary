@@ -1,5 +1,5 @@
-from adversary.app.commands import xcopy
-from adversary.app.operation.operation import Step, OPFile, OPRat, OPVar, OPShare
+from ..commands import xcopy
+from ..operation.operation import Step, OPFile, OPRat, OPVar, OPShare
 
 
 class XCopy(Step):

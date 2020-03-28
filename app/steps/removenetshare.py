@@ -1,5 +1,5 @@
-from adversary.app.commands import net
-from adversary.app.operation.operation import Step, OPHost, OPRat, OPVar, OPShare, OPFile
+from ..commands import net
+from ..operation.operation import Step, OPHost, OPRat, OPVar, OPShare, OPFile
 
 
 class RemoveNetShare(Step):

@@ -1,6 +1,6 @@
-from adversary.app.commands import parsers
-from adversary.app.commands.powershell import PSFunction
-from adversary.app.operation.operation import Step, OPHost, OPRat, OPOSVersion, OperationWrapper, ObservedRat
+from ..commands import parsers
+from ..commands.powershell import PSFunction
+from ..operation.operation import Step, OPHost, OPRat, OPOSVersion, OperationWrapper, ObservedRat
 
 
 class GetComputers(Step):
