@@ -1,10 +1,10 @@
 import asyncio
 import logging
 
-from ..commands import cmd, sc, command
-from ..commands import parsers
-from ..commands.errors import *
-from ..operation.operation import Step, OPHost, OPRat, OPVar, OPService
+from app.commands import cmd, sc, command
+from app.commands import parsers
+from app.commands.errors import *
+from app.operation.operation import Step, OPHost, OPRat, OPVar, OPService
 
 log = logging.getLogger(__name__)
 

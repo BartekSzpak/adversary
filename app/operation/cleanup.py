@@ -1,14 +1,14 @@
 import logging
 from typing import Callable, Union
 
-from ..commands import taskkill, cmd, net, sc, schtasks, reg, footprint, static
-from ..commands.command import CommandLine
-from ..commands.errors import *
-from ..commands.powershell import PSArg, PSFunction, escape_string_literally
-from ..engine.objects import ObservedHost, Operation, ObservedRat, ObservedFile, ObservedRegKey, \
+from app.commands import taskkill, cmd, net, sc, schtasks, reg, footprint, static
+from app.commands.command import CommandLine
+from app.commands.errors import *
+from app.commands.powershell import PSArg, PSFunction, escape_string_literally
+from app.engine.objects import ObservedHost, Operation, ObservedRat, ObservedFile, ObservedRegKey, \
     ObservedShare, \
     ObservedSchtask, ObservedService, Host, JobException, Trashed, Rat
-from ..operation.operation import InterfaceWrapper
+from app.operation.operation_obj import InterfaceWrapper
 from ..util import CaseException
 
 log = logging.getLogger(__name__)

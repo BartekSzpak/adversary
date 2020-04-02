@@ -3,7 +3,7 @@ import configparser
 import os
 import pathlib
 
-from ..database.dao import Dao
+from .database.dao import Dao
 
 
 class AdversaryPluginSettings:

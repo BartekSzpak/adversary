@@ -14,28 +14,28 @@ from collections import defaultdict
 from typing import List, Type, Callable, Union, Dict, Optional
 
 import mongoengine
-from . import event_logging
-from . import util
-from ..adversary import adversary
-from ..commands import errors
-from ..commands import parsers
-from ..engine.objects import Rat, ObservedUser, ObservedDomain, ObservedFile, ObservedCredential, \
+from .. import event_logging
+from .. import util
+from app.adversary import adversary
+from app.commands import errors
+from app.commands import parsers
+from app.engine.objects import Rat, ObservedUser, ObservedDomain, ObservedFile, ObservedCredential, \
     ObservedHost, ObservedShare, ObservedSchtask, ObservedTimeDelta, ObservedRat, Operation, ExtrovirtsDocument, \
     CodedStep, ObservedPersistence, ObservedService, ObservedRegKey, Host, AttackTechnique, ObservedProcess, \
     ObservedDevice, JobException, Trashed, ErrorLog, ObservedOSVersion, Setting
-from ..logic import planner, logic
-from ..operation.cleanup import Cleaner
-from ..operation.operation_errors import StepParseError, RatDisconnectedError, InvalidTimeoutExceptionError, \
+from app.logic import planner, logic
+from app.operation.cleanup import Cleaner
+from app.operation.operation_errors import StepParseError, RatDisconnectedError, InvalidTimeoutExceptionError, \
     RatCallbackTimeoutError
-from ..operation.operation_obj import InterfaceWrapper, OperationWrapper
-from ..operation.operation_script import ScriptContext
-from ..operation.step import OPCredential, OPDomain, OPRat, OPFile, OPHost, OPSchtask, OPShare, OPTimeDelta, \
+from app.operation.operation_obj import InterfaceWrapper, OperationWrapper
+from app.operation.operation_script import ScriptContext
+from app.operation.step import OPCredential, OPDomain, OPRat, OPFile, OPHost, OPSchtask, OPShare, OPTimeDelta, \
     OPUser, \
     OPVar, \
     Step, Keyword, OPPersistence, OPService, OPRegKey, OPProcess, OPTrashed, OPOSVersion, OPDevice
-from ..steps import all_steps
-from ..util import CaseException
-from ..utility.simulation import get_simulated_domain_data
+from app.steps import all_steps
+from app.util import CaseException
+from app.utility.simulation import get_simulated_domain_data
 from bson.objectid import ObjectId
 from mongoengine import ListField, ReferenceField
 
@@ -43,7 +43,7 @@ try:
     from submodules.clips.app.logic.clips_logic import CLIPSContext as LogicContext
 except ImportError:
     logging.warning("Couldn't find clips module. Falling back to slower pyDatalog")
-    from ..logic.pydatalog_logic import DatalogContext as LogicContext
+    from app.logic.pydatalog_logic import DatalogContext as LogicContext
 
 _database_objs = {OPUser: ObservedUser,
                   OPHost: ObservedHost,

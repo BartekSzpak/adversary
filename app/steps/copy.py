@@ -1,5 +1,5 @@
-from ..commands import cmd
-from ..operation.operation import Step, OPFile, OPRat, OPVar, OPShare
+from app.commands import cmd
+from app.operation.operation import Step, OPFile, OPRat, OPVar, OPShare
 
 
 class Copy(Step):

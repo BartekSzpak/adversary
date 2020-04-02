@@ -1,7 +1,7 @@
 import random
 
-from ..commands import static
-from ..operation.operation import Step, OPRat, OPPersistence, OPVar, OPFile
+from app.commands import static
+from app.operation.operation import Step, OPRat, OPPersistence, OPVar, OPFile
 
 
 class AssociationAbuse(Step):

@@ -2,9 +2,9 @@ import datetime
 import uuid
 from typing import List, Union, Dict
 
-from ..engine.database import EncryptedDictField
-from ..engine.objects import Log
-from ..util import tz_utcnow
+from .engine.database import EncryptedDictField
+from .engine.objects import Log
+from util import tz_utcnow
 
 version = 1.1
 

@@ -1,5 +1,5 @@
-from ..commands import net
-from ..operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPShare
+from app.commands import net
+from app.operation.operation import Step, OPUser, OPDomain, OPCredential, OPHost, OPRat, OPVar, OPShare
 
 
 class NetUse(Step):

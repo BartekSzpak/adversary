@@ -3,10 +3,6 @@ import os
 from datetime import datetime, timezone
 from typing import Dict, List
 
-import requests
-
-import app.config as config
-
 
 class CaseException(Exception):
     pass
@@ -52,77 +48,6 @@ def relative_path(dunder_file, relative_path):
     directory = os.path.dirname(dunder_file)
     return os.path.join(directory, relative_path)
 
-
-def load_connection_data(mode):
-    """
-    Retrieves proxy and cert settings
-    Args:
-        mode: specific proxy/cert combination to use
-    Returns:
-        cert: path to configured cert
-        proxies: dictionary containing proxy data
-
-    """
-    proxies = {'http': config.settings.http_proxy, 'https': config.settings.https_proxy}
-    if not proxies['https'] and not proxies['http']:
-        proxies = None
-    cert = config.settings.ssl_cert_file
-    if not cert:
-        cert = True
-    return cert, proxies
-
-
-def grab_site(site: str, params, mode: str, stream: bool):
-    """
-    Contacts a website for content
-    Args:
-        site: the site to visit
-        params: requests parameters to use
-        mode: specific proxy/cert combination to use
-        stream: treat the connection as a data stream
-    Returns:
-        requests object containing the website's response
-    """
-    cert, proxies = load_connection_data(mode)
-    return requests.get(site, params=params, proxies=proxies, verify=cert, stream=stream)
-
-
-def encrypt_file(file: str) -> array:
-    """
-    Encrypts a file for transfer to the Caldera Agents and Rats
-    Args:
-        file: The file contents to encrypt
-    Returns:
-        arr: The encrypted file contents
-    """
-    key = [0x32, 0x45, 0x32, 0xca]
-    arr = array.array('B', file.encode())
-
-    for i, val in enumerate(arr):
-        cur_key = key[i % len(key)]
-        arr[i] = val ^ cur_key
-
-    return arr
-
-
-def decrypt_file(enc_file: str) -> str:
-    """
-    Decrypts a transfer-ready file
-    Args:
-        enc_file: The file contents to decry[t
-    Returns:
-        The unencrypted file contents
-    """
-    key = [0x32, 0x45, 0x32, 0xca]
-    arr = array.array('B', enc_file)
-
-    for i, val in enumerate(arr):
-        cur_key = key[i % len(key)]
-        arr[i] = val ^ cur_key
-    return ''.join(map(chr,arr))
-
-
-def list_files() -> array:
     """
     Recursively lists files starting in the Caldera files folder
     Args:

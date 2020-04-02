@@ -1,9 +1,9 @@
 from datetime import timedelta
 
-from ..commands import schtasks
-from ..util import tz_utcnow
+from app.commands import schtasks
+from app.util import tz_utcnow
 
-from ..operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar, OPSchtask, \
+from app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar, OPSchtask, \
     OPTimeDelta
 
 

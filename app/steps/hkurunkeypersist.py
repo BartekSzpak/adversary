@@ -1,8 +1,8 @@
 import logging
 
-from ..commands import reg
-from ..commands.errors import *
-from ..operation.operation import Step, OPUser, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
+from app.commands import reg
+from app.commands.errors import *
+from app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
 
 log = logging.getLogger(__name__)
 

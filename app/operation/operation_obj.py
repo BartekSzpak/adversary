@@ -2,13 +2,13 @@ import functools
 import logging
 from typing import List, Callable
 
-from . import event_logging
-from . import interface as interface_module
-from ..commands.command import CommandLine
-from ..commands.powershell import PSFunction
-from ..engine.objects import Operation, ObservedRat
-from ..operation.operation_errors import MissingFileError
-from ..simulate import sim
+from .. import event_logging
+from .. import interface as interface_module
+from app.commands.command import CommandLine
+from app.commands.powershell import PSFunction
+from app.engine.objects import Operation, ObservedRat
+from app.operation.operation_errors import MissingFileError
+from app.simulate import sim
 
 log = logging.getLogger(__name__)
 

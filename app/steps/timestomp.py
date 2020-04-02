@@ -1,6 +1,6 @@
-from ..commands import parsers
-from ..commands.powershell import PSArg, PSFunction
-from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar
+from app.commands import parsers
+from app.commands.powershell import PSArg, PSFunction
+from app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar
 
 
 class Timestomp(Step):
@@ -47,7 +47,7 @@ class Timestomp(Step):
         # Don't parse if type 0 failure
         if results == {}:
             return False
-        # Unpack parser...
+        # Unpack parserapp..
         if results["TimestampModified"] == "True":
             timestamp_modified = True
         else:

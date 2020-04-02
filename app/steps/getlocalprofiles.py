@@ -1,5 +1,5 @@
-from ..commands import reg
-from ..operation.operation import Step, OPUser, OPHost, OPRat, OPVar
+from app.commands import reg
+from app.operation.operation import Step, OPUser, OPHost, OPRat, OPVar
 
 
 class GetLocalProfiles(Step):

@@ -1,6 +1,6 @@
-import ..config as config
-from ..commands import psexec
-from ..operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
+import app.config as config
+from app.commands import psexec
+from app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
 
 
 class PsexecMove(Step):

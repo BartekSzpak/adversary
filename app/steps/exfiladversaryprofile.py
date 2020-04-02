@@ -1,4 +1,4 @@
-from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar
+from app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar
 
 
 class ExfilAdversaryProfile(Step):

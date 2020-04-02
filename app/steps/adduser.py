@@ -1,5 +1,5 @@
-from ..commands import net
-from ..operation.operation import Step, OPRat, OPHost
+# from app.commands import net
+from app.operation.operation import Step, OPRat, OPHost
 
 
 class AddUser(Step):
@@ -20,14 +20,14 @@ class AddUser(Step):
     async def simulate(operation, rat):
         return True
 
-    @staticmethod
-    async def action(operation, rat):
-        await operation.execute_shell_command(rat, *net.user_add("test", "hello123WORLD!"))
-        return True
+    # @staticmethod
+    # async def action(operation, rat):
+    #     await operation.execute_shell_command(rat, *net.user_add("test", "hello123WORLD!"))
+    #     return True
 
-    @staticmethod
-    async def cleanup(cleaner, host):
-        try:
-            await cleaner.run_on_agent(host, *net.user_delete("test"))
-        except:
-            pass # It's possible for the cleanup command to fail, which will cause the system to hang
+    # @staticmethod
+    # async def cleanup(cleaner, host):
+    #     try:
+    #         await cleaner.run_on_agent(host, *net.user_delete("test"))
+    #     except:
+    #         pass # It's possible for the cleanup command to fail, which will cause the system to hang

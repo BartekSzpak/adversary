@@ -1,6 +1,6 @@
-from ..commands import parsers
-from ..commands.powershell import PSFunction
-from ..operation.operation import Step, OPHost, OPRat, OPVar, OPService
+from app.commands import parsers
+from app.commands.powershell import PSFunction
+from app.operation.operation import Step, OPHost, OPRat, OPVar, OPService
 
 
 class GetPrivEscSvcInfo(Step):

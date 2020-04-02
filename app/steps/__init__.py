@@ -3,17 +3,23 @@ import inspect
 import os
 from pathlib import Path
 
-from ..operation.step import Step
-from ..util import relative_path
+from app.operation.step import Step
 
-step_dir = Path(relative_path(__file__, os.path.join('..', 'steps')))
+
+def relative_path(dunder_file, relative_path):
+    directory = os.path.dirname(dunder_file)
+    return os.path.join(directory, relative_path)
+
+
+step_dir = Path(relative_path(__file__, ''))
+# step_dir = Path(relative_path(__file__, os.path.join('app.', 'steps')))
 all_steps = []
 lookup_step_by_name = {}
 
 for step_file in step_dir.iterdir():
     if step_file.is_file():
         if step_file.name.endswith('.py') and not step_file.name.startswith('__'):
-            module = importlib.import_module('..steps.' + step_file.stem, __package__)
+            module = importlib.import_module('app.steps.' + step_file.stem, __package__)
             for name, obj in inspect.getmembers(module):
                 if inspect.isclass(obj) and issubclass(obj, Step) and obj != Step:
                     all_steps.append(obj)

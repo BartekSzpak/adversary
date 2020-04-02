@@ -1,7 +1,7 @@
-from ..commands import parsers
-from ..commands.mimikatz import MimikatzCommand, sekurlsa_pth, mimi_exit, privilege_debug
-from ..commands.powershell import PSArg, PSFunction
-from ..operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
+from app.commands import parsers
+from app.commands.mimikatz import MimikatzCommand, sekurlsa_pth, mimi_exit, privilege_debug
+from app.commands.powershell import PSArg, PSFunction
+from app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
 
 
 class PassTheHashCopy(Step):

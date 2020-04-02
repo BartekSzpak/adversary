@@ -1,5 +1,5 @@
-from ..commands import wmic
-from ..operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
+from app.commands import wmic
+from app.operation.operation import Step, OPUser, OPDomain, OPFile, OPCredential, OPHost, OPRat, OPVar
 
 
 class WMIRemoteProcessCreate(Step):

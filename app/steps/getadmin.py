@@ -1,6 +1,6 @@
-from ..commands import parsers
-from ..commands.powershell import PSArg, PSFunction
-from ..operation.operation import Step, OPUser, OPDomain, OPHost, OPRat, OPVar
+from app.commands import parsers
+from app.commands.powershell import PSArg, PSFunction
+from app.operation.operation import Step, OPUser, OPDomain, OPHost, OPRat, OPVar
 
 
 class GetAdmin(Step):

@@ -1,5 +1,5 @@
-from ..commands import cmd
-from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar
+from app.commands import cmd
+from app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar
 
 
 class DirListCollection(Step):

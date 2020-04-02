@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from ..commands import net
-from ..operation.operation import Step, OPHost, OPRat, OPVar, OPTimeDelta
+from app.commands import net
+from app.operation.operation import Step, OPHost, OPRat, OPVar, OPTimeDelta
 
 
 class NetTime(Step):

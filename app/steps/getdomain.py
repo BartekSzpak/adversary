@@ -1,5 +1,5 @@
-from ..commands import nbtstat
-from ..operation.operation import Step, OPDomain, OPRat
+from app.commands import nbtstat
+from app.operation.operation import Step, OPDomain, OPRat
 
 
 class GetDomain(Step):

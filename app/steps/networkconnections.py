@@ -1,7 +1,7 @@
 import logging
 
-from ..commands import netstat
-from ..operation.operation import Step, OPRat
+from app.commands import netstat
+from app.operation.operation import Step, OPRat
 
 log = logging.getLogger(__name__)
 

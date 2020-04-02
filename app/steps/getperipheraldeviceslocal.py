@@ -1,6 +1,6 @@
-from ..commands import cmd
-from ..commands import parsers
-from ..operation.operation import Step, OPDevice, OPHost, OPRat, OPVar
+from app.commands import cmd
+from app.commands import parsers
+from app.operation.operation import Step, OPDevice, OPHost, OPRat, OPVar
 
 
 class GetPeripheralDevicesLocal(Step):

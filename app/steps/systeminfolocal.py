@@ -1,5 +1,5 @@
-from ..commands import systeminfo
-from ..operation.operation import Step, OPDomain, OPHost, OPRat, OPVar, OPOSVersion
+from app.commands import systeminfo
+from app.operation.operation import Step, OPDomain, OPHost, OPRat, OPVar, OPOSVersion
 
 
 class SysteminfoLocal(Step):

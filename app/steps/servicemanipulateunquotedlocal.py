@@ -1,9 +1,9 @@
 import asyncio
 import logging
 
-from ..commands import cmd, sc
-from ..commands.errors import *
-from ..operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPService
+from app.commands import cmd, sc
+from app.commands.errors import *
+from app.operation.operation import Step, OPFile, OPHost, OPRat, OPVar, OPService
 
 log = logging.getLogger(__name__)
 

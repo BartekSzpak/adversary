@@ -1,5 +1,5 @@
-from ..commands import reg
-from ..operation.operation import Step, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
+from app.commands import reg
+from app.operation.operation import Step, OPHost, OPRat, OPVar, OPPersistence, OPRegKey
 
 
 class HKLMRunKeyPersist(Step):
